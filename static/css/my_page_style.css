@@ -1,0 +1,97 @@
+/* 导航条 */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航链接 */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 链接 - 修改颜色 */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 创建三个不相等的列 */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* 左侧宽度 */
+.column.left {
+    width: 25%;
+    height: 100%;
+    background-color: #888888;
+}
+
+/* 中间区域宽度 */
+.column.middle {
+    width: 70%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+.wrapper canvas {
+    border-radius: 19px;
+    background: #e0e0e0;
+    box-shadow: 14px 14px 32px #b3b3b3,
+    -14px -14px 32px #ffffff;
+}
+
+.wrapper .btn-list {
+    width: 1000px;
+    text-align: center;
+}
+
+.wrapper .btn-list li {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.wrapper .btn-list li input {
+    background-color: darkgreen;
+    color: blanchedalmond;
+    border: none;
+    padding: 6px 13px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.wrapper .btn-list li input:hover {
+    border: 1px solid chocolate;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.5);
+}
